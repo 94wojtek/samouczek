@@ -45,7 +45,7 @@ public class BankAccount implements Account, BankTransfer{
             throw new IllegalArgumentException("Amount must be larger than 0.");
         }
 
-        if (amountWithFee > 0 && amountWithFee <= from.balance) {
+        if (amountWithFee > 0 && amountWithFee <= from.getBalance()) {
             from.withdraw(amountWithFee);
             to.deposit(amount);
         }
