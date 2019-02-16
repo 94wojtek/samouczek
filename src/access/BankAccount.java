@@ -36,6 +36,9 @@ public class BankAccount implements Account, BankTransfer{
         System.out.println("Sender balance after withdrawal: " + getBalance());
     }
 
+    /*
+    //DISABLED ORIGINAL METHOD
+    
     @Override
     public void transfer(BankAccount from, BankAccount to, double amount) {
 
@@ -53,6 +56,7 @@ public class BankAccount implements Account, BankTransfer{
             throw new IllegalArgumentException("Amount can not be larger than available funds. Available funds: " + from.getBalance());
         }
     }
+    */
 }
 
 class Bank {
@@ -61,6 +65,7 @@ class Bank {
         BankAccount acc2 = new BankAccount();
 
         acc2.deposit(100);
-        acc1.transfer(acc2, acc1, 5);
+        //acc1.transfer(acc2, acc1, 5);
+        BankTransfer.transfer(acc2, acc1, 5);
     }
 }
