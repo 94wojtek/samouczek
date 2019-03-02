@@ -78,6 +78,7 @@ public class BasketDeleteTest {
         assertEquals(8, basketTest.computeTotalQty());
     }
 
+    
     @Test
     public void checkIfCountRightPrice() {
         assertEquals(800, basketTest.computeTotalPrice(), 0.001);
