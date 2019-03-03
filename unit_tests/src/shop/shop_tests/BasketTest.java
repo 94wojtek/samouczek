@@ -52,6 +52,5 @@ public class BasketTest {
         catch (IllegalArgumentException e) {
             assertEquals("Select at least one item.", e.getMessage());
         }
-        
     }
 }
