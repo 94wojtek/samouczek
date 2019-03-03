@@ -47,5 +47,6 @@ public class ItemTest {
     public void shouldCheckHashCode() {
         if (bike1.hashCode() == bike2.hashCode())
             System.out.println("hash pass");
+        
     }
 }
