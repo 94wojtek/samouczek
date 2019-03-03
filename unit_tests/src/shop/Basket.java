@@ -102,8 +102,7 @@ public class Basket {
     }
 
     //delete all items from basket
-    public void deleteAll() {
-        
+    public void deleteAll() {        
         orderedItems.clear();
     }
 }
