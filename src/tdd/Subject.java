@@ -36,7 +36,7 @@ public class Subject {
             return false;
         }
         Subject subject = (Subject) o;
-        return Double.compare(subject.average, average) == 0 &&
+        return Double.compare(subject.computeAverage(), computeAverage()) == 0 &&
                 name == subject.name &&
                 Objects.equals(grades, subject.grades);
     }
