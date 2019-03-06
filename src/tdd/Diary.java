@@ -65,7 +65,7 @@ public class Diary {
             throw new NullPointerException("Select subject to retrieve.");
         }
 
-        return subject.getName() + ": " + subject.getGrades() + "; Average: " + subject.getAverage();
+        return subject.toString();
     }
 
     public double computeDiaryAverage() {
