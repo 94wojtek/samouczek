@@ -76,6 +76,6 @@ public class SubjectTest {
     //check if subjects average is 0 when subjects grade list is empty
     @Test
     public void shouldReturnZeroIfGradeListIsEmpty() {
-        assertTrue(math2.computeAverage() == 0);
+        assertEquals(0, math2.computeAverage(), 0.001);
     }
 }
