@@ -30,7 +30,7 @@ public class Diary {
             return false;
         }
         Diary diary1 = (Diary) o;
-        return Double.compare(diary1.diaryAverage, diaryAverage) == 0 &&
+        return Double.compare(diary1.computeDiaryAverage(), computeDiaryAverage()) == 0 &&
                 Objects.equals(diary, diary1.diary);
     }
 
